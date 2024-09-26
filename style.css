@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+    --bg-color: #f0f8ff; /* Fundo azul claro */
+    --primary-color: #ff6347; /* Cabeçalho vermelho tomate */
+    --secondary-color: #4682b4; /* Cor de destaque azul aço */
+    --font: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    font-family: var(--font);
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin: 0 2rem;
+    font-size: 1.5rem;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff4500;
+    transform: rotate(5deg);
+}
+
+.grafico {
+    margin-top: 3rem;
+}
+
+#graficos-container {
+    margin: 5rem;
+}
+
+.graficos-container__texto {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    border: 3px dotted var(--secondary-color);
+    background-color: rgba(255, 99, 71, 0.1); /* Fundo transparente com cor do destaque */
+}
+
+span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
